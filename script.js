@@ -10,7 +10,7 @@ function showSlides(index) {
     slideIndex = slides.length;
   }
 
-  slides.forEach((slide) => (slide.style.display = 'image'));
+  slides.forEach((slide) => (slide.style.display = 'none'));
   dots.forEach((dot) => (dot.style.backgroundColor = '#bbb'));
 
   slides[slideIndex - 1].style.display = 'block';
