@@ -13,11 +13,11 @@
       var input, filter, table, tr, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
-      table = document.getElementById("yourTableID"); // replace with your actual table ID
+      table = document.getElementById("table"); // replace with your actual table ID
       tr = table.getElementsByTagName("tr");
 
       for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0]; // adjust the index based on your table structure
+        td = tr[i].getElementsByTagName("td")[14]; // adjust the index based on your table structure
         if (td) {
           txtValue = td.textContent || td.innerText;
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -78,7 +78,7 @@ Moreover, Kerala's efforts in promoting sustainable development and preserving i
 In conclusion, Kerala holds a special place in India's rich and diverse cultural landscape. The state's historical context, key figures, and impact on various fields reflect its unique and multi-faceted identity. By analyzing the contributions of influential individuals and examining both the positive and negative aspects of Kerala, we can better understand the challenges and opportunities that lie ahead for the state. As Kerala continues to evolve, it will be crucial for its government and people to work towards sustainable development, social inclusion, and environmental conservation to ensure a bright future for 'God's Own Country.'</STRONG></b>
 <br><br>
   <form>
-       	<table align="center" border="2%" height="10%" width="30%">
+       	<table id="table" align="center" border="2%" height="10%" width="30%">
 	<tr>
 		<th>Districts</th>
 	    <td>14</td></tr>
